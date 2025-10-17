@@ -10,8 +10,8 @@ def browser_size():
 
 @pytest.fixture()
 def open_browser(browser_size):
-    browser.open('https://demoqa.com/automation-practice-form')
+    browser.config.base_url = 'https://demoqa.com'
 
-    yield browser
+    yield
     browser.quit()
 
