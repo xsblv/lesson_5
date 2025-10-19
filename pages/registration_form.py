@@ -1,38 +1,6 @@
 import os
 from selene import browser, command, be, have
-from user import User
-
-
-
-"""class User:
-    first_name: str
-    last_name: str
-    email: str
-    phone: str
-    address: str
-    gender: str
-    birthdate: dict
-    subject: str
-    hobby: list
-    file: str
-    address: str
-    state: str
-    city: str
-
-    def __init__(self, first_name, last_name, email, phone, address, gender, birthdate, state, city, subject,hobby, file):
-        self.hobby = hobby
-        self.subject = subject
-        self.file = file
-        self.city = city
-        self.gender = gender
-        self.birthdate = birthdate
-        self.state = state
-        self.first_name = first_name
-        self.last_name = last_name
-        self.email = email
-        self.phone = phone
-        self.address = address
-        self.gender = gender"""
+from test_data.user import User
 
 class RegistrationFormPage:
     def open(self):
